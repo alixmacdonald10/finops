@@ -1,0 +1,8 @@
+# Repo-wide safety net. OpenTofu-specific patterns live in infra/.gitignore.
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+*.tfplan

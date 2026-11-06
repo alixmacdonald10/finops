@@ -1,0 +1,35 @@
+# OpenTofu working files. Commit .terraform.lock.hcl and terraform.tfvars.example.
+
+# Provider/module cache
+.terraform/
+
+# State (contains the admin password) and lock info
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Variable files with real values
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Saved plans (can contain sensitive values)
+*.tfplan
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Local overrides (Terraform and OpenTofu .tofu variants)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+override.tofu
+override.tofu.json
+*_override.tofu
+*_override.tofu.json
+
+# CLI config
+.terraformrc
+terraform.rc

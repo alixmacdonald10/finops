@@ -1,0 +1,35 @@
+# Copy to terraform.tfvars and edit. terraform.tfvars is gitignored.
+resource_group_name = "rg-devvm-dev"   # must already exist
+# location          = "uksouth"        # omit to use the resource group's region
+admin_username      = "user"
+
+# project     = "devvm"
+# environment = "dev"
+
+# Networking: dedicated VNet by default. To use an existing VNet instead:
+# create_vnet              = false
+# vnet_name                = "vnet-shared"
+# vnet_resource_group_name = "rg-network"     # omit if same as resource_group_name
+# subnet_address_prefix    = "10.20.5.0/28"   # free range in that VNet
+# vnet_address_space       = ["10.0.0.0/24"]  # only used when create_vnet = true
+
+# allowed_ip  = "203.0.113.10"   # omit to auto-detect
+# use_spot    = true             # cheaper, may be evicted
+# os_disk_type    = "StandardSSD_LRS"
+# os_disk_size_gb = 64
+
+# Working hours / patching (UK)
+# auto_shutdown_time    = "1700"
+# work_start_time       = "08:00"
+# patch_window_start    = "00:45"   # Sunday
+# patch_window_stop     = "03:00"   # Sunday
+# enable_auto_start     = true
+
+# Access
+# allow_ssh_outbound = false      # set false to block outbound SSH (port 22)
+# neovim_version     = "v0.12.6"
+
+# Tags
+# tags = {
+# 	"key": "value"
+# }
